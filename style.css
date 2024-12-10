@@ -292,19 +292,80 @@
 .prof-card{
 	display: flex;
 	flex-direction: column;
-	height: 30rem;
+	/* height: 30rem; */
+	padding: 1rem;
+	border: 2px solid var(--clr-primary);
+	border-radius: 20px;
+	margin: 1rem;
 }
 
 .card-img{
 	width: 50%;
+	max-height: 15rem;
 }
 
 .specs{
+	width: 100%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.badge{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.container{
+	display: flex;
+	width: 30rem;
+}
+
+.only-text{
+	width: 100%;
+	padding: 1rem;
+}
+
+.nome{
+	text-align: center;
+	padding: 1rem;
+}
+
+.presentation{
+	width: 50%;
+	margin: auto;
+	margin-top: 1rem;
+	text-align: center;
+}
+
+.contact-info{
+	margin: 1rem;
+	display: flex;
+	gap: 1rem;
+	padding: 1rem;
+}
+
+.contact-only{
 	width: 50%;
 }
 
-.div-image-text{
-	display: flex;
+.find-only{
+	width: 50%;
+}
+
+.contact-title{
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.tel-number, .address{
+	text-decoration: none;
+	color: black;
+}
+
+@media screen and (min-width: 1220px) {
+	.wrap-list{
+		justify-content: center;
+	}
 }
 
 @media screen and (max-width: 700px){
@@ -331,6 +392,33 @@
 
 	.prof-list{
 		flex-direction: column;
+	}
+
+	.container{
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+	}
+
+	.card-img{
+		width: 60%;
+		max-height: 20rem;
+	}
+
+	.presentation{
+		width: 80%;
+	}
+
+	.contact-info{
+		flex-direction: column;
+	}
+	
+	.contact-only{
+		width: 100%;
+	}
+	
+	.find-only{
+		width: 100%;
 	}
 }
 
